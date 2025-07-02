@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: rgb(94, 118, 96);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: white;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 300px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.tarjeta3d {
+  background-image: url('3Dfondo.png');
+  background-size: cover;
+  background-position: center;
+  width: 280px;
+  height: 180px; 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+
+.tarjeta3d h2 {
+  color: purple;
+}
+
+.tarjeta3d a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tarjetaSeguimiento {
+  background-image: url(Seguimiento.png);
+  background-size: cover;
+  background-position: center;
+  width: 280px;
+  height: 180px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.tarjetaSeguimiento h2 {
+  color: purple;
+}
+
+.tarjetaSeguimiento a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-top: 300px;
+}
+
+footer a {
+  color: #00f0ff;
+}
+
+.modelos3d {
+    background-image: url(3Dfondo.png);
+}
+
+.tarjeta-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
