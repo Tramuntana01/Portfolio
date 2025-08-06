@@ -6,7 +6,7 @@
 
 body {
   font-family: "DM sans", sans-serif;
-  background: white;
+  background: linear-gradient(#f0f0f0 , #9691a8);
   color: #111;
   min-height: 100vh;
   overflow-x: hidden;
@@ -68,6 +68,37 @@ body {
   background-color: #e60000;
   height: 12px;
   width: 100%;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+  margin-top: 4rem;
+  margin-right: 20rem;
+}
+
+.social-links a {
+  color: #111;          
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover[href*="https://github.com/"] {
+  color: #787878;
+}
+.social-links a:hover[href*="https://www.linkedin.com/"] {
+  color: #0A66C2;
+}
+.social-links a:hover[href*="mailto:adriantramuntana@gmail.com"] {
+  color: #EA4335;
 }
 
 .presentacion {
