@@ -179,3 +179,34 @@ body {
   transition: width 0.4s ease;
 }
 
+@media (max-width: 768px) {
+  .top-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sticker {
+    width: 280px;
+    transform: rotate(0deg);
+    margin-bottom: 2rem;
+  }
+
+  .social-links {
+    margin-top: 1rem;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .presentacion p {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill {
+    max-width: 90%;
+  }
+}
