@@ -43,7 +43,7 @@ Representa mi evolución real como desarrollador.
 
 **Contacto**: adriantramuntana@gmail.com 
 
-**LinkedIn**: *(pendiente)*  
+**LinkedIn**: https://www.linkedin.com/in/adri%C3%A1n-teixidor-905019368/
 
 **GitHub**: https://github.com/Tramuntana01
 
