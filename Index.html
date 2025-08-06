@@ -1,49 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adrian Tramuntana – Portfolio Personal</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Web personal de Adrian Tramuntana: proyectos 3D, desarrollo y formación." />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adrian Tramuntana – Portfolio Personal</title>
+    <meta name="description" content="Portfolio web de Adrian Tramuntana: desarrollo web y proyectos personales." />
+    <meta name="author" content="Adrian Tramuntana" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href="https://adriantportfolio.netlify.app/" />
+    <link rel="icon" href="/favicon.ico" />
 
-  <header>
-    <h1>Adrian Tramuntana</h1>
-    <p class="subtitulo">Diseño 3D · Desarrollo · Formación</p>
-    <hr />
-  </header>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet" />
 
-  <main class="contenido">
-    <section class="tarjetas">
-      <!-- Modelos 3D -->
-      <a href="https://sketchfab.com/TramuntanaMess/models" class="tarjeta-link" target="_blank" rel="noopener noreferrer">
-        <div class="tarjeta tarjeta3d">
-          <span class="tarjeta-text">Modelos 3D</span>
-        </div>
-      </a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-      <!-- Seguimiento académico -->
-      <a href="https://www.notion.so/Seguimiento-academico-Adrian-TP-213dd555766a801faae6edb806ea4f71" class="tarjeta-link" target="_blank" rel="noopener noreferrer">
-        <div class="tarjeta tarjetaSeguimiento">
-          <span class="tarjeta-text">Seguimiento académico</span>
-        </div>
-      </a>
+    <link rel="stylesheet" href="style.css" />
 
-        <!-- Páginas web -->
-      <a href="webs.html" class="tarjeta-link" target="_blank" rel="noopener noreferrer">
-        <div class="tarjeta webs">
-          <span class="tarjeta-text">Páginas Web</span>
-        </div>
-      </a>
+    <meta property="og:title" content="Portfolio Adrian Tramuntana" />
+    <meta property="og:description" content="Descubre los trabajos de Adrian Tramuntana: desarrollo frontend, habilidades y más." />
+    <meta property="og:image" content="https://AdrianTportfolio.netlify.app/preview.jpg" />
+    <meta property="og:url" content="https://AdrianTportfolio.netlify.app" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Adrian Tramuntana – Portfolio Personal" />
+    <meta name="twitter:description" content="Descubre mis proyectos, desarrollo web y más." />
+    <meta name="twitter:image" content="https://AdrianTportfolio.netlify.app/preview.jpg" />
+  </head>
+
+  <body>
+  <main class="main-container">
+    <header class="sticker">
+      <div class="sticker-banner">
+        <div class="hello">HELLO</div>
+        <div class="sub">my name is</div>
+      </div>
+      <div class="sticker-name">Adrián T</div>
+      <div class="sticker-bottom"></div>
+    </header>
+
+    <section class="presentacion">
+      <p>
+        Self-taught frontend developer. Creative, focused, and deeply interested in technology.
+        <br>Learning by doing, aiming to move into backend.
+      </p>
     </section>
+
+<section class="projects-section">
+<h3>Projects</h3>
+ <div class="projects-grid">
+<div class="project">
+  <p>Work in progress</p>
+</div>
+ </div>
+</section>
+
+<section class="skills-section">
+  <h2>Skills & Tools</h2>
+
+  <div class="skills-grid">
+  <div class="skill">
+    <img src="icons/html5.svg" alt="HTML5">
+    <div class="skill-info">
+      <span>HTML</span>
+      <div class="progress-bar"><div class="progress" style="width: 60%"></div></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <img src="icons/css.svg" alt="CSS">
+    <div class="skill-info">
+      <span>CSS</span>
+      <div class="progress-bar"><div class="progress" style="width: 40%"></div></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <img src="icons/javascript.svg" alt="JavaScript">
+    <div class="skill-info">
+      <span>JavaScript</span>
+      <div class="progress-bar"><div class="progress" style="width: 15%"></div></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <img src="icons/nodedotjs.svg" alt="NodeJS">
+    <div class="skill-info">
+      <span>Node.js</span>
+      <div class="progress-bar"><div class="progress" style="width: 0%"></div></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <img src="icons/python.svg" alt="Python">
+    <div class="skill-info">
+      <span>Python</span>
+      <div class="progress-bar"><div class="progress" style="width: 0%"></div></div>
+    </div>
+  </div>
+</div>
+
+</section>
+
   </main>
-
-  <footer>
-    <p>Contacto</p>
-    <a href="mailto:adriantramuntana@gmail.com">adriantramuntana@gmail.com</a>
-  </footer>
-
 </body>
+
 </html>
