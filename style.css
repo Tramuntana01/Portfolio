@@ -123,6 +123,69 @@ body {
   font-size: 1.6rem;
 }
 
+.project {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  max-width: 300px;
+  margin: auto;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #000;
+  margin-bottom: 0.5rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project a:hover .project-img {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.project p {
+  font-size: 0.85rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.project .links a {
+  display: inline-block;
+  margin: 0 0.25rem;
+  font-size: 0.85rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project .links a:hover {
+  text-decoration: underline;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
 .skills-section {
   width: 100%;
   margin-top: 3rem;
