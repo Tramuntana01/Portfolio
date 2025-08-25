@@ -1,263 +1,195 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Adrian Tramuntana – Portfolio Personal</title>
-    <meta
-      name="description"
-      content="Portfolio web de Adrian Tramuntana: desarrollo web y proyectos personales."
-    />
+    <meta name="description" content="Portfolio web de Adrian Tramuntana: desarrollo web y proyectos personales." />
     <meta name="author" content="Adrian Tramuntana" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index,follow" />
     <meta name="theme-color" content="#000000" />
+
     <link rel="canonical" href="https://adriantportfolio.netlify.app/" />
     <link rel="icon" href="/favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400..700;1,400..700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400..700;1,400..700&family=Rock+Salt&display=swap"
       rel="stylesheet"
     />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      referrerpolicy="no-referrer"
     />
 
     <link rel="stylesheet" href="style.css" />
 
     <meta property="og:title" content="Portfolio Adrian Tramuntana" />
-    <meta
-      property="og:description"
-      content="Descubre los trabajos de Adrian Tramuntana: desarrollo frontend, habilidades y más."
-    />
-    <meta
-      property="og:image"
-      content="https://AdrianTportfolio.netlify.app/preview.jpg"
-    />
-    <meta property="og:url" content="https://AdrianTportfolio.netlify.app" />
+    <meta property="og:description" content="Descubre los trabajos de Adrian Tramuntana: desarrollo frontend, habilidades y más." />
+    <meta property="og:image" content="https://adriantportfolio.netlify.app/preview.jpg" />
+    <meta property="og:url" content="https://adriantportfolio.netlify.app/" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Adrian Tramuntana – Portfolio Personal"
-    />
-    <meta
-      name="twitter:description"
-      content="Descubre mis proyectos, desarrollo web y más."
-    />
-    <meta
-      name="twitter:image"
-      content="https://AdrianTportfolio.netlify.app/preview.jpg"
-    />
+    <meta name="twitter:title" content="Adrian Tramuntana – Portfolio Personal" />
+    <meta name="twitter:description" content="Descubre mis proyectos, desarrollo web y más." />
+    <meta name="twitter:image" content="https://adriantportfolio.netlify.app/preview.jpg" />
   </head>
 
   <body>
-    <div class="sidebar">
+    <aside class="sidebar" aria-label="Acceso rápido">
       <a href="lab.html" target="_blank" rel="noopener noreferrer" class="sidebar-btn">Lab</a>
-    </div>
+    </aside>
 
     <main class="main-container">
-      <div class="top-header">
-        <header class="sticker">
-          <div class="sticker-banner">
+      <header class="top-header" role="banner">
+        <div class="sticker" aria-label="Tarjeta de presentación">
+          <div class="sticker-banner" aria-hidden="true">
             <div class="hello">HELLO</div>
             <div class="sub">my name is</div>
           </div>
           <div class="sticker-name">Adrián T</div>
-          <div class="sticker-bottom"></div>
-        </header>
-        <div class="header-buttons">
-          <button id="lang-toggle">ES</button>
-          <button id="theme-toggle">🌙</button>
+          <div class="sticker-bottom" aria-hidden="true"></div>
         </div>
-        <div class="social-links">
-          <a
-            href="https://github.com/Tramuntana01/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-          >
-            <i class="fab fa-github"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/adri%C3%A1n-teixidor-905019368/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a
-            href="mailto:adriantramuntana@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Gmail"
-          >
-            <i class="fas fa-envelope"></i>
-          </a>
+
+        <div class="header-actions">
+          <div class="header-buttons" role="group" aria-label="Controles de interfaz">
+            <button id="lang-toggle" type="button" aria-pressed="false" aria-label="Cambiar idioma">ES</button>
+            <button id="theme-toggle" type="button" aria-pressed="false" aria-label="Cambiar tema">🌙</button>
+          </div>
+
+          <nav class="social-links" aria-label="Redes y contacto">
+            <a href="https://github.com/Tramuntana01/" target="_blank" rel="noopener noreferrer me" aria-label="GitHub de Adrian Tramuntana">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/adri%C3%A1n-teixidor-905019368/" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn de Adrian Tramuntana">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:adriantramuntana@gmail.com" rel="noopener noreferrer" aria-label="Enviar email a Adrian Tramuntana">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+          </nav>
         </div>
-      </div>
+      </header>
 
       <section class="presentacion">
         <p data-i18n="intro">
-          Exploring software development through self-taught projects and
-          continuously
-          <br />building skills to shape my future in the tech industry.
+          Explorando el desarrollo de software a través de proyectos autodidactas y construyendo habilidades continuamente  para forjar mi futuro en la industria tecnológica.
         </p>
       </section>
 
-      <section class="projects-section">
-        <h1 data-i18n="projectsTitle">AI-Generated Creative Projects</h1>
-        <p data-i18n="projectsDesc">
-          Ideas I’d like to build in the future, currently prototyped with AI.
-        </p>
-        <br />
+      <section class="projects-section" aria-labelledby="projects-title">
+        <h1 id="projects-title" data-i18n="projectsTitle">Proyectos Creativos Generados con IA</h1>
+        <p data-i18n="projectsDesc">Ideas que me gustaría construir en el futuro, actualmente prototipadas con IA.</p>
+
         <div class="projects-grid">
           <!-- Proyecto: Ragnarok Online GeoGuessr -->
-          <section class="project">
+          <article class="project">
             <h2>Ragnarok Online GeoGuessr</h2>
-            <a
-              href="https://roguesser.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://roguesser.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Abrir demo de Ragnarok Online GeoGuessr">
               <img
                 src="media/ro-geo-preview.png"
-                alt="Captura del juego Ragnarok GeoGuessr"
+                alt="Captura del mini-juego Ragnarok Online GeoGuessr"
                 class="project-img"
                 loading="lazy"
+                decoding="async"
               />
             </a>
             <p data-i18n="proj1Desc">
-              Mini-game in React to guess Ragnarok Online maps from random
-              cropped images.
+              Mini-juego en React para adivinar mapas de Ragnarok Online a partir de imágenes recortadas aleatorias.
             </p>
-            <div class="links">
-              <a
-                href="https://roguesser.netlify.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-i18n="viewDemo"
-                >View demo</a
-              >
-              <a
-                href="https://github.com/Tramuntana01/ragnarok-geoguessr"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-i18n="viewCode"
-                >Code</a
-              >
+            <div class="links" role="group" aria-label="Enlaces del proyecto Ragnarok Online GeoGuessr">
+              <a href="https://roguesser.netlify.app" target="_blank" rel="noopener noreferrer" data-i18n="viewDemo">Ver demo</a>
+              <a href="https://github.com/Tramuntana01/ragnarok-geoguessr" target="_blank" rel="noopener noreferrer" data-i18n="viewCode">Código</a>
             </div>
-          </section>
+          </article>
 
           <!-- Proyecto: 3D Map Globalizer -->
-          <section class="project">
+          <article class="project">
             <h2>3D Map Globalizer</h2>
-            <a
-              href="https://3d-map-globalizer.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://3d-map-globalizer.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir demo de 3D Map Globalizer">
               <img
                 src="media/Globe-mapper-preview.png"
-                alt="Captura del juego 3D Map Globalizer"
+                alt="Captura de la app 3D Map Globalizer"
                 class="project-img"
                 loading="lazy"
+                decoding="async"
               />
             </a>
             <p data-i18n="proj2Desc">
-              Turn any map into a 3D globe. Upload your favorite map and explore
-              it with rotation, lighting control, and custom markers
+             Convierte cualquier mapa en un globo 3D. Sube tu mapa favorito y explóralo con rotación, control de iluminación y marcadores personalizados.
             </p>
-            <div class="links">
-              <a
-                href="https://3d-map-globalizer.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-i18n="viewDemo"
-                >View demo</a
-              >
-              <a
-                href="https://github.com/Tramuntana01/universal-globe-mapper"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-i18n="viewCode"
-                >Code</a
-              >
+            <div class="links" role="group" aria-label="Enlaces del proyecto 3D Map Globalizer">
+              <a href="https://3d-map-globalizer.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="viewDemo">Ver demo</a>
+              <a href="https://github.com/Tramuntana01/universal-globe-mapper" target="_blank" rel="noopener noreferrer" data-i18n="viewCode">Código</a>
             </div>
-          </section>
+          </article>
         </div>
       </section>
 
-      <section class="skills-section">
-        <h2 data-i18n="skillsTitle">Skills & Tools</h2>
+      <section class="skills-section" aria-labelledby="skills-title">
+        <h2 id="skills-title" data-i18n="skillsTitle">Habilidades y Herramientas</h2>
 
-        <div class="skills-grid">
-          <div class="skill">
-            <img src="icons/html5.svg" alt="HTML5" />
+        <div class="skills-grid" role="list">
+          <div class="skill" role="listitem">
+            <img src="icons/html5.svg" alt="HTML5" loading="lazy" decoding="async" />
             <div class="skill-info">
               <span>HTML</span>
-              <div class="progress-bar">
-                <div class="progress" style="width: 60%"></div>
+              <div class="progress-bar" aria-hidden="true">
+                <div class="progress" style="width:60%"></div>
               </div>
             </div>
           </div>
 
-          <div class="skill">
-            <img src="icons/css.svg" alt="CSS" />
+          <div class="skill" role="listitem">
+            <img src="icons/css.svg" alt="CSS" loading="lazy" decoding="async" />
             <div class="skill-info">
               <span>CSS</span>
-              <div class="progress-bar">
-                <div class="progress" style="width: 40%"></div>
+              <div class="progress-bar" aria-hidden="true">
+                <div class="progress" style="width:40%"></div>
               </div>
             </div>
           </div>
 
-          <div class="skill">
-            <img src="icons/javascript.svg" alt="JavaScript" />
+          <div class="skill" role="listitem">
+            <img src="icons/javascript.svg" alt="JavaScript" loading="lazy" decoding="async" />
             <div class="skill-info">
               <span>JavaScript</span>
-              <div class="progress-bar">
-                <div class="progress" style="width: 15%"></div>
+              <div class="progress-bar" aria-hidden="true">
+                <div class="progress" style="width:15%"></div>
               </div>
             </div>
           </div>
 
-          <div class="skill">
-            <img src="icons/nodedotjs.svg" alt="NodeJS" />
+          <div class="skill" role="listitem">
+            <img src="icons/nodedotjs.svg" alt="Node.js" loading="lazy" decoding="async" />
             <div class="skill-info">
               <span>Node.js</span>
-              <div class="progress-bar">
-                <div class="progress" style="width: 0%"></div>
+              <div class="progress-bar" aria-hidden="true">
+                <div class="progress" style="width:0%"></div>
               </div>
             </div>
           </div>
 
-          <div class="skill">
-            <img src="icons/python.svg" alt="Python" />
+          <div class="skill" role="listitem">
+            <img src="icons/python.svg" alt="Python" loading="lazy" decoding="async" />
             <div class="skill-info">
               <span>Python</span>
-              <div class="progress-bar">
-                <div class="progress" style="width: 0%"></div>
+              <div class="progress-bar" aria-hidden="true">
+                <div class="progress" style="width:0%"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <script src="scripts/lang.js"></script>
-    <script src="scripts/theme.js"></script>
+
+    <script src="scripts/lang.js" defer></script>
+    <script src="scripts/theme.js" defer></script>
+    <noscript>Activa JavaScript para usar el selector de idioma y el cambio de tema.</noscript>
   </body>
 </html>

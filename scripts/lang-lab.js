@@ -2,6 +2,7 @@ const translations = {
   en: {
     title: "JavaScript Lab",
     subtitle: "Mini-projects and exercises to practice JS fundamentals.",
+    labProjectsTitle: "Projects Lab",
     calcTitle: "Calculator",
     calcDesc: "Basic operations with functions and validations.",
     todoTitle: "To-Do List",
@@ -12,6 +13,7 @@ const translations = {
   es: {
     title: "Laboratorio de JavaScript",
     subtitle: "Mini-proyectos y ejercicios para practicar fundamentos de JS.",
+    labProjectsTitle: "Laboratorio de Proyectos",
     calcTitle: "Calculadora",
     calcDesc: "Operaciones básicas con funciones y validaciones.",
     todoTitle: "Lista de Tareas",
