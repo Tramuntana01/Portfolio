@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Lab – Adrián T</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header-buttons">
+    <button id="lang-toggle">EN</button>
+    <button id="theme-toggle">🌙</button>
+  </div>
+
+  <main class="main-container">
+    <h1 data-i18n="title">JavaScript Lab</h1>
+    <p data-i18n="subtitle">Mini-proyectos y ejercicios para practicar fundamentos de JS.</p>
+
+    <div class="projects-grid">
+      <section class="project">
+        <h2 data-i18n="calcTitle">Calculadora</h2>
+        <p data-i18n="calcDesc">Operaciones básicas con funciones y validaciones.</p>
+        <div class="links">
+          <a data-i18n="viewDemo" href="https://.../calculadora" target="_blank">View demo</a>
+          <a data-i18n="viewCode" href="https://github.com/.../calculadora" target="_blank">Code</a>
+        </div>
+      </section>
+
+      <section class="project">
+        <h2 data-i18n="todoTitle">To-Do List</h2>
+        <p data-i18n="todoDesc">Gestor de tareas en arrays.</p>
+        <div class="links">
+          <a data-i18n="viewDemo" href="https://.../todo" target="_blank">View demo</a>
+          <a data-i18n="viewCode" href="https://github.com/.../todo" target="_blank">Code</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="scripts/lang-lab.js"></script>
+  <script src="scripts/theme.js"></script>
+</body>
+
+</html>

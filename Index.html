@@ -64,6 +64,10 @@
   </head>
 
   <body>
+    <div class="sidebar">
+      <a href="lab.html" target="_blank" rel="noopener noreferrer" class="sidebar-btn">Lab</a>
+    </div>
+
     <main class="main-container">
       <div class="top-header">
         <header class="sticker">
@@ -74,7 +78,10 @@
           <div class="sticker-name">Adrián T</div>
           <div class="sticker-bottom"></div>
         </header>
-
+        <div class="header-buttons">
+          <button id="lang-toggle">ES</button>
+          <button id="theme-toggle">🌙</button>
+        </div>
         <div class="social-links">
           <a
             href="https://github.com/Tramuntana01/"
@@ -104,61 +111,98 @@
       </div>
 
       <section class="presentacion">
-        <p>
-          Exploring software development through self-taught projects and continuously 
+        <p data-i18n="intro">
+          Exploring software development through self-taught projects and
+          continuously
           <br />building skills to shape my future in the tech industry.
         </p>
       </section>
 
       <section class="projects-section">
-        <h1>AI-Generated Creative Projects</h1>
-        <p>
+        <h1 data-i18n="projectsTitle">AI-Generated Creative Projects</h1>
+        <p data-i18n="projectsDesc">
           Ideas I’d like to build in the future, currently prototyped with AI.
         </p>
-        <br>
+        <br />
         <div class="projects-grid">
-
           <!-- Proyecto: Ragnarok Online GeoGuessr -->
           <section class="project">
             <h2>Ragnarok Online GeoGuessr</h2>
-            <a href="https://roguesser.netlify.app" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://roguesser.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="media/ro-geo-preview.png"
                 alt="Captura del juego Ragnarok GeoGuessr"
                 class="project-img"
                 loading="lazy"
-              >
+              />
             </a>
-            <p>Mini-game in React to guess Ragnarok Online maps from random cropped images.</p>
+            <p data-i18n="proj1Desc">
+              Mini-game in React to guess Ragnarok Online maps from random
+              cropped images.
+            </p>
             <div class="links">
-              <a href="https://roguesser.netlify.app" target="_blank" rel="noopener noreferrer">View demo</a>
-              <a href="https://github.com/Tramuntana01/ragnarok-geoguessr" target="_blank" rel="noopener noreferrer">Code</a>
+              <a
+                href="https://roguesser.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="viewDemo"
+                >View demo</a
+              >
+              <a
+                href="https://github.com/Tramuntana01/ragnarok-geoguessr"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="viewCode"
+                >Code</a
+              >
             </div>
           </section>
 
-           <!-- Proyecto: 3D Map Globalizer -->
+          <!-- Proyecto: 3D Map Globalizer -->
           <section class="project">
             <h2>3D Map Globalizer</h2>
-            <a href="https://3d-map-globalizer.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://3d-map-globalizer.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="media/Globe-mapper-preview.png"
                 alt="Captura del juego 3D Map Globalizer"
                 class="project-img"
                 loading="lazy"
-              >
+              />
             </a>
-            <p>Turn any map into a 3D globe. Upload your favorite map and explore it with rotation, lighting control, and custom markers</p>
+            <p data-i18n="proj2Desc">
+              Turn any map into a 3D globe. Upload your favorite map and explore
+              it with rotation, lighting control, and custom markers
+            </p>
             <div class="links">
-              <a href="https://3d-map-globalizer.netlify.app/" target="_blank" rel="noopener noreferrer">View demo</a>
-              <a href="https://github.com/Tramuntana01/universal-globe-mapper" target="_blank" rel="noopener noreferrer">Code</a>
+              <a
+                href="https://3d-map-globalizer.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="viewDemo"
+                >View demo</a
+              >
+              <a
+                href="https://github.com/Tramuntana01/universal-globe-mapper"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="viewCode"
+                >Code</a
+              >
             </div>
           </section>
-
         </div>
       </section>
 
       <section class="skills-section">
-        <h2>Skills & Tools</h2>
+        <h2 data-i18n="skillsTitle">Skills & Tools</h2>
 
         <div class="skills-grid">
           <div class="skill">
@@ -213,5 +257,7 @@
         </div>
       </section>
     </main>
+    <script src="scripts/lang.js"></script>
+    <script src="scripts/theme.js"></script>
   </body>
 </html>
