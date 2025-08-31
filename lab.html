@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body class="lab">
     <header class="top-header" role="banner" aria-label="Cabecera del laboratorio">
       <div class="header-buttons" role="group" aria-label="Controles de interfaz">
         <button id="lang-toggle" type="button" aria-pressed="false" aria-label="Cambiar idioma">EN</button>
@@ -18,36 +18,40 @@
     </header>
 
     <main class="main-container">
-      <h1 data-i18n="title">JavaScript Lab</h1>
+      <h1 data-i18n="title">Laboratorio de JavaScript</h1>
       <p data-i18n="subtitle">Mini-proyectos y ejercicios para practicar fundamentos de JS.</p>
 
-      <section class="projects-section" aria-labelledby="lab-projects-title">
-        <h2 data-i18n="labProjectsTitle" id="lab-projects-title" class="sr-only">Proyectos del laboratorio</h2>
+      <!--Calculadora-->
+      
+      <div id="calculator">
+        <h2 data-i18n="calcTitle">Calculadora</h2>
+        <input id="calcDisplay" readonly>
+          <div id="keys">
+          <button class="calcBtn operatorBtn" onclick="appendToDisplay('+')"> + </button>
+          <button class="calcBtn" onclick="appendToDisplay('7')"> 7 </button>
+          <button class="calcBtn" onclick="appendToDisplay('8')"> 8 </button>
+          <button class="calcBtn" onclick="appendToDisplay('9')"> 9 </button>
+          <button class="calcBtn operatorBtn" onclick="appendToDisplay('-')"> - </button>
+          <button class="calcBtn" onclick="appendToDisplay('4')"> 4 </button>
+          <button class="calcBtn" onclick="appendToDisplay('5')"> 5 </button>
+          <button class="calcBtn" onclick="appendToDisplay('6')"> 6 </button>
+          <button class="calcBtn operatorBtn" onclick="appendToDisplay('*')"> * </button>
+          <button class="calcBtn" onclick="appendToDisplay('1')"> 1 </button>
+          <button class="calcBtn" onclick="appendToDisplay('2')"> 2 </button>
+          <button class="calcBtn" onclick="appendToDisplay('3')"> 3 </button>
+          <button class="calcBtn operatorBtn" onclick="appendToDisplay('/')"> / </button>
+          <button class="calcBtn" onclick="appendToDisplay('0')"> 0 </button>
+          <button class="calcBtn" onclick="appendToDisplay('.')"> . </button>
+          <button class="calcBtn" onclick="calculate()"> = </button>
+          <button class="calcBtn operatorBtn" onclick="clearDisplay()"> C </button>
+          </div>
+      </div>
 
-        <div class="projects-grid">
-          <article class="project">
-            <h3 data-i18n="calcTitle">Calculadora</h3>
-            <p data-i18n="calcDesc">Operaciones básicas con funciones y validaciones.</p>
-            <div class="links" role="group" aria-label="Enlaces Calculadora">
-              <a data-i18n="viewDemo" href="https://.../calculadora" target="_blank" rel="noopener noreferrer">View demo</a>
-              <a data-i18n="viewCode" href="https://github.com/.../calculadora" target="_blank" rel="noopener noreferrer">Code</a>
-            </div>
-          </article>
-
-          <article class="project">
-            <h3 data-i18n="todoTitle">To-Do List</h3>
-            <p data-i18n="todoDesc">Gestor de tareas en arrays.</p>
-            <div class="links" role="group" aria-label="Enlaces To-Do List">
-              <a data-i18n="viewDemo" href="https://.../todo" target="_blank" rel="noopener noreferrer">View demo</a>
-              <a data-i18n="viewCode" href="https://github.com/.../todo" target="_blank" rel="noopener noreferrer">Code</a>
-            </div>
-          </article>
-        </div>
-      </section>
     </main>
 
     <script src="scripts/lang-lab.js" defer></script>
     <script src="scripts/theme.js" defer></script>
+    <script src="scripts/calculator.js" defer></script>
     <noscript>Activa JavaScript para usar el selector de idioma y el cambio de tema.</noscript>
   </body>
 </html>

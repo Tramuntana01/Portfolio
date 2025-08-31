@@ -5,10 +5,11 @@
 
 html { -webkit-text-size-adjust: 100%; }
 
-body {
+body.index,
+body.lab {
   margin: 0;
   min-height: 100vh;
-  font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: "DM Sans", system-ui, sans-serif;
   color: #111;
   background: linear-gradient(#ffffff, #c5b9cf);
   overflow-x: hidden;
@@ -267,6 +268,68 @@ body.dark-mode .social-links a{ color:#fff; }
 
 body.dark-mode .skills-grid .skill img{
   filter: invert(1) brightness(1.25) contrast(1.05);
+}
+
+#calculator{
+  background-color: #181818;
+  border-radius: 35px;
+  border: #000;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+#calcDisplay{
+  width: 100%;
+  padding: 20px;
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  background-color: #dadada;
+  color: black
+}
+
+#keys{
+  display: grid;
+  grid-template-columns: repeat(4, 0fr);
+  gap: 10px;
+  padding: 25px;
+}
+#calcContainer{
+  width: 400px;
+  text-align: center;
+  font-size: large;
+  font: bold;
+}
+.calcBtn {
+  width: 80px;
+  height: 80px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background-color: #333333;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.calcBtn:hover {
+  background-color: #5e5e5e;
+}
+
+.calcBtn:active {
+  background-color: #4d4d4d;
+}
+
+.operatorBtn {
+  background-color: rgb(255, 163, 14);
+}
+.operatorBtn:hover {
+  background-color: rgba(255, 163, 14, 0.733);
+}
+
+body.lab h2 {
+  text-align: center;
+  color: white;
 }
 
 @media (max-width: 768px){
