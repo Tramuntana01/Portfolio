@@ -34,3 +34,4 @@ document.getElementById("lang-toggle").addEventListener("click", () => {
 
 // Inicializar
 applyTranslations();
+

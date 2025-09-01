@@ -4,54 +4,107 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>JavaScript Lab – Adrián T</title>
-    <meta name="description" content="Mini-proyectos y ejercicios para practicar fundamentos de JavaScript." />
+    <meta
+      name="description"
+      content="Mini-proyectos y ejercicios para practicar fundamentos de JavaScript."
+    />
     <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body class="lab">
-    <header class="top-header" role="banner" aria-label="Cabecera del laboratorio">
-      <div class="header-buttons" role="group" aria-label="Controles de interfaz">
-        <button id="lang-toggle" type="button" aria-pressed="false" aria-label="Cambiar idioma">EN</button>
-        <button id="theme-toggle" type="button" aria-pressed="false" aria-label="Cambiar tema">🌙</button>
+    <header
+      class="top-header"
+      role="banner"
+      aria-label="Cabecera del laboratorio"
+    >
+      <div
+        class="header-buttons"
+        role="group"
+        aria-label="Controles de interfaz"
+      >
+        <button
+          id="lang-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Cambiar idioma"
+        >
+          EN
+        </button>
+        <button
+          id="theme-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Cambiar tema"
+        >
+          🌙
+        </button>
       </div>
     </header>
 
     <main class="main-container">
       <h1 data-i18n="title">Laboratorio de JavaScript</h1>
-      <p data-i18n="subtitle">Mini-proyectos y ejercicios para practicar fundamentos de JS.</p>
+      <p data-i18n="subtitle">
+        Mini-proyectos y ejercicios para practicar fundamentos de JS.
+      </p>
 
       <!--Calculadora-->
-      
-      <div id="calculator">
-        <h2 data-i18n="calcTitle">Calculadora</h2>
-        <input id="calcDisplay" readonly>
+      <div id="toolsContainer">
+        <div id="calculator">
+          <h2 data-i18n="calcTitle">Calculadora</h2>
+          <input id="calcDisplay" readonly />
           <div id="keys">
-          <button class="calcBtn operatorBtn" onclick="appendToDisplay('+')"> + </button>
-          <button class="calcBtn" onclick="appendToDisplay('7')"> 7 </button>
-          <button class="calcBtn" onclick="appendToDisplay('8')"> 8 </button>
-          <button class="calcBtn" onclick="appendToDisplay('9')"> 9 </button>
-          <button class="calcBtn operatorBtn" onclick="appendToDisplay('-')"> - </button>
-          <button class="calcBtn" onclick="appendToDisplay('4')"> 4 </button>
-          <button class="calcBtn" onclick="appendToDisplay('5')"> 5 </button>
-          <button class="calcBtn" onclick="appendToDisplay('6')"> 6 </button>
-          <button class="calcBtn operatorBtn" onclick="appendToDisplay('*')"> * </button>
-          <button class="calcBtn" onclick="appendToDisplay('1')"> 1 </button>
-          <button class="calcBtn" onclick="appendToDisplay('2')"> 2 </button>
-          <button class="calcBtn" onclick="appendToDisplay('3')"> 3 </button>
-          <button class="calcBtn operatorBtn" onclick="appendToDisplay('/')"> / </button>
-          <button class="calcBtn" onclick="appendToDisplay('0')"> 0 </button>
-          <button class="calcBtn" onclick="appendToDisplay('.')"> . </button>
-          <button class="calcBtn" onclick="calculate()"> = </button>
-          <button class="calcBtn operatorBtn" onclick="clearDisplay()"> C </button>
+            <button class="calcBtn operatorBtn" onclick="appendToDisplay('+')">
+              +
+            </button>
+            <button class="calcBtn" onclick="appendToDisplay('7')">7</button>
+            <button class="calcBtn" onclick="appendToDisplay('8')">8</button>
+            <button class="calcBtn" onclick="appendToDisplay('9')">9</button>
+            <button class="calcBtn operatorBtn" onclick="appendToDisplay('-')">
+              -
+            </button>
+            <button class="calcBtn" onclick="appendToDisplay('4')">4</button>
+            <button class="calcBtn" onclick="appendToDisplay('5')">5</button>
+            <button class="calcBtn" onclick="appendToDisplay('6')">6</button>
+            <button class="calcBtn operatorBtn" onclick="appendToDisplay('*')">
+              *
+            </button>
+            <button class="calcBtn" onclick="appendToDisplay('1')">1</button>
+            <button class="calcBtn" onclick="appendToDisplay('2')">2</button>
+            <button class="calcBtn" onclick="appendToDisplay('3')">3</button>
+            <button class="calcBtn operatorBtn" onclick="appendToDisplay('/')">
+              /
+            </button>
+            <button class="calcBtn" onclick="appendToDisplay('0')">0</button>
+            <button class="calcBtn" onclick="appendToDisplay('.')">.</button>
+            <button class="calcBtn" onclick="calculate()">=</button>
+            <button class="calcBtn operatorBtn" onclick="clearDisplay()">
+              C
+            </button>
           </div>
-      </div>
+        </div>
 
+        <!--Temporaziador-->
+
+        <div class="timer">
+          <h3 data-i18n="timerTitle">Temporizador</h3>
+          <div id="timerDisplay">00:00:00</div>
+          <div class="timerButtons">
+            <button class="timerBtn" onclick="startTimer()">Start</button>
+            <button class="timerBtn" onclick="stopTimer()">Stop</button>
+            <button class="timerBtn" onclick="resetTimer()">Reset</button>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script src="scripts/lang-lab.js" defer></script>
     <script src="scripts/theme.js" defer></script>
     <script src="scripts/calculator.js" defer></script>
-    <noscript>Activa JavaScript para usar el selector de idioma y el cambio de tema.</noscript>
+    <script src="scripts/timer.js" defer></script>
+    <noscript
+      >Activa JavaScript para usar el selector de idioma y el cambio de
+      tema.</noscript
+    >
   </body>
 </html>
