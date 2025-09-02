@@ -95,6 +95,16 @@
             <button class="timerBtn" onclick="resetTimer()">Reset</button>
           </div>
         </div>
+
+        <!--ToDoList-->
+        <div id="todoList">
+          <h3 data-i18n="todoTitle">Lista de Tareas</h3>
+          <div class="todoInputContainer">
+            <input type="text" id="todoInput" data-i18n="todoPlaceHolder" placeholder="Añadir nueva tarea"/>
+            <button id="addTodoBtn">+</button>
+          </div>
+          <ul id="todoItems"></ul>
+        </div>
       </div>
     </main>
 
@@ -102,6 +112,7 @@
     <script src="scripts/theme.js" defer></script>
     <script src="scripts/calculator.js" defer></script>
     <script src="scripts/timer.js" defer></script>
+    <script src="scripts/todolist.js" defer></script>
     <noscript
       >Activa JavaScript para usar el selector de idioma y el cambio de
       tema.</noscript
