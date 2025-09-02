@@ -1,25 +1,27 @@
 const translations = {
   en: {
-    title: "JavaScript Lab",
-    subtitle: "Mini-projects and exercises to practice JS fundamentals.",
-    labProjectsTitle: "Projects Lab",
+    title: "JavaScript Tools",
+    subtitle: "Tools created to practice JS fundamentals.",
     calcTitle: "Calculator",
     timerTitle: "Timer",
     todoTitle: "To-Do List",
-    todoPlaceHolder: "Add new task"
+    todoPlaceHolder: "Add new task",
+    handyNotesTitle: "Handy Notes",
+    handyNotesPlaceholder: "Write your notes here...",
   },
   es: {
-    title: "Laboratorio de JavaScript",
-    subtitle: "Mini-proyectos y ejercicios para practicar fundamentos de JS.",
-    labProjectsTitle: "Laboratorio de Proyectos",
+    title: "Herramientas con JavaScript",
+    subtitle: "Herramientas creadas para practicar fundamentos de JS.",
      calcTitle: "Calculadora",
      timerTitle: "Temporizador",
      todoTitle: "Lista de Tareas",
-     todoPlaceHolder: "Añadir nueva tarea"
+     todoPlaceHolder: "Añadir nueva tarea",
+     handyNotesTitle: "Notas rápidas",
+     handyNotesPlaceholder: "Escribe tus notas aquí...",
   }
 };
 
-let currentLang = localStorage.getItem("langLab") || "en";
+let currentLang = localStorage.getItem("langTools") || "en";
 
 function applyTranslations() {
   document.querySelectorAll("[data-i18n]").forEach(el => {
@@ -40,7 +42,7 @@ function applyTranslations() {
 
 document.getElementById("lang-toggle").addEventListener("click", () => {
   currentLang = currentLang === "en" ? "es" : "en";
-  localStorage.setItem("langLab", currentLang);
+  localStorage.setItem("langTools", currentLang);
   applyTranslations();
 });
 

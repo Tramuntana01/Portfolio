@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>JavaScript Lab – Adrián T</title>
+    <title>JavaScript Tools – Adrián T</title>
     <meta
       name="description"
       content="Mini-proyectos y ejercicios para practicar fundamentos de JavaScript."
@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="lab">
+  <body class="tools">
     <header
       class="top-header"
       role="banner"
-      aria-label="Cabecera del laboratorio"
+      aria-label="Cabecera del apartado tools"
     >
       <div
         class="header-buttons"
@@ -43,9 +43,25 @@
     </header>
 
     <main class="main-container">
-      <h1 data-i18n="title">Laboratorio de JavaScript</h1>
+      <div class="header-content">
+        <h1 data-i18n="title">Herramientas con JavaScript</h1>
+        
+        <!--Weather Widget-->
+        <div id="weatherWidget" class="weather-card">
+            <h3 data-i18n="weatherTitle">Clima en Palma</h3>
+            <div class="weather-content">
+                <div class="weather-temp">
+                    <span id="weather">Cargando...</span>
+                </div>
+                <div class="weather-info">
+                    <p class="weather-location">Palma de Mallorca</p>
+                    <p class="weather-updated">Actualizado: <span id="weatherTime"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
       <p data-i18n="subtitle">
-        Mini-proyectos y ejercicios para practicar fundamentos de JS.
+        Herramientas creadas para practicar fundamentos de JS.
       </p>
 
       <!--Calculadora-->
@@ -105,14 +121,23 @@
           </div>
           <ul id="todoItems"></ul>
         </div>
+
+        <!--HandyNotes-->
+        <div class="handyNotes">
+          <h3 id="handyNotesTitle" data-i18n="handyNotesTitle">Notas rápidas</h3>
+          <textarea id="handyNotesInput" data-i18n="handyNotesPlaceholder"></textarea>
+        </div>
+
       </div>
     </main>
 
-    <script src="scripts/lang-lab.js" defer></script>
+    <script src="scripts/lang-tools.js" defer></script>
     <script src="scripts/theme.js" defer></script>
     <script src="scripts/calculator.js" defer></script>
     <script src="scripts/timer.js" defer></script>
     <script src="scripts/todolist.js" defer></script>
+    <script src="scripts/handynotes.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <noscript
       >Activa JavaScript para usar el selector de idioma y el cambio de
       tema.</noscript

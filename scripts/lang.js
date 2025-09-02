@@ -7,7 +7,8 @@ const translations = {
     proj2Desc: "Turn any map into a 3D globe. Upload your favorite map and explore it with rotation, lighting control, and custom markers.",
     viewDemo: "View demo",
     viewCode: "Code",
-    skillsTitle: "Skills & Tools"
+    skillsTitle: "Skills & Tools",
+    disclaimerText: "Portfolio created with vanilla JavaScript, HTML, and CSS."
   },
   es: {
     intro: "Explorando el desarrollo de software a través de proyectos autodidactas y construyendo habilidades continuamente  para forjar mi futuro en la industria tecnológica.",
@@ -17,7 +18,8 @@ const translations = {
     proj2Desc: "Convierte cualquier mapa en un globo 3D. Sube tu mapa favorito y explóralo con rotación, control de iluminación y marcadores personalizados.",
     viewDemo: "Ver demo",
     viewCode: "Código",
-    skillsTitle: "Habilidades y Herramientas"
+    skillsTitle: "Habilidades y Herramientas",
+    disclaimerText: "Portfolio creado con JavaScript vanilla, HTML y CSS."
   }
 };
 
