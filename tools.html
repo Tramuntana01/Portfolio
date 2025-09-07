@@ -13,8 +13,8 @@
   </head>
 
   <body class="tools">
-     <aside class="sidebar" aria-label="Acceso rápido">
-        <a href="index.html" class="sidebar-btn">Index</a>
+    <aside class="sidebar" aria-label="Acceso rápido">
+      <a href="index.html" class="sidebar-btn">Home</a>
     </aside>
     <header
       class="top-header"
@@ -44,25 +44,70 @@
         </button>
       </div>
     </header>
+  
 
+      </div>
+
+  <section class="search-engines">
+      <h2 data-i18n="searchTitle">Buscadores</h2>
+      <div class="search-container">
+        <form
+          action="https://www.google.com/search"
+          method="get"
+          target="_blank"
+          class="search-form"
+        >
+          <input type="text" name="q" placeholder="Buscar en Google" />
+          <button type="submit" class="search-btn google">
+            <img src="assets/google.png" alt="Google" />
+          </button>
+        </form>
+
+        <form
+          action="https://duckduckgo.com/"
+          method="get"
+          target="_blank"
+          class="search-form"
+        >
+          <input type="text" name="q" placeholder="Buscar en DuckDuckGo" />
+          <button type="submit" class="search-btn duckduckgo">
+            <img src="assets/ddg.png" alt="DuckDuckGo" />
+          </button>
+        </form>
+
+        <form
+          action="https://yandex.com/search/"
+          method="get"
+          target="_blank"
+          class="search-form"
+        >
+          <input type="text" name="text" placeholder="Buscar en Yandex" />
+          <button type="submit" class="search-btn yandex">
+            <img src="assets/yandex.png" alt="Yandex" />
+          </button>
+        </form>
+
+    </section>
     <main class="main-container">
       <div class="header-content">
         <h1 data-i18n="title">Herramientas con JavaScript</h1>
-        
+
         <!--Weather Widget-->
         <div id="weatherWidget" class="weather-card">
-            <h3 data-i18n="weatherTitle">Clima en Palma</h3>
-            <div class="weather-content">
-                <div class="weather-temp">
-                    <span id="weather">Cargando...</span>
-                </div>
-                <div class="weather-info">
-                    <p class="weather-location">Palma de Mallorca</p>
-                    <p class="weather-updated">Actualizado: <span id="weatherTime"></span></p>
-                </div>
+          <h3 data-i18n="weatherTitle">Clima en Palma</h3>
+          <div class="weather-content">
+            <div class="weather-temp">
+              <span id="weather">Cargando...</span>
             </div>
+            <div class="weather-info">
+              <p class="weather-location">Palma de Mallorca</p>
+              <p class="weather-updated">
+                Actualizado: <span id="weatherTime"></span>
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
       <p data-i18n="subtitle">
         Herramientas creadas para practicar fundamentos de JS.
       </p>
@@ -119,7 +164,12 @@
         <div id="todoList">
           <h3 data-i18n="todoTitle">Lista de Tareas</h3>
           <div class="todoInputContainer">
-            <input type="text" id="todoInput" data-i18n="todoPlaceHolder" placeholder="Añadir nueva tarea"/>
+            <input
+              type="text"
+              id="todoInput"
+              data-i18n="todoPlaceHolder"
+              placeholder="Añadir nueva tarea"
+            />
             <button id="addTodoBtn">+</button>
           </div>
           <ul id="todoItems"></ul>
@@ -127,10 +177,14 @@
 
         <!--HandyNotes-->
         <div class="handyNotes">
-          <h3 id="handyNotesTitle" data-i18n="handyNotesTitle">Notas rápidas</h3>
-          <textarea id="handyNotesInput" data-i18n="handyNotesPlaceholder"></textarea>
+          <h3 id="handyNotesTitle" data-i18n="handyNotesTitle">
+            Notas rápidas
+          </h3>
+          <textarea
+            id="handyNotesInput"
+            data-i18n="handyNotesPlaceholder"
+          ></textarea>
         </div>
-
       </div>
     </main>
 
