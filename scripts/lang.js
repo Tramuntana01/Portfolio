@@ -8,7 +8,11 @@ const translations = {
     viewDemo: "View demo",
     viewCode: "Code",
     skillsTitle: "Skills & Tools",
-    disclaimerText: "Portfolio created with vanilla JavaScript, HTML, and CSS."
+    disclaimerText: "Portfolio created with vanilla JavaScript, HTML, and CSS.",
+    salontext: "Static web page for a beauty salon and haircuts.",
+    MainProjectsTitle: "Main Projects.",
+    MainProjectsDesc: "Original projects aimed at development and learning.",
+    gametext: "First simple 3D video game created with Unity, models created with Blender and downloaded from the web."
   },
   es: {
     intro: "Explorando el desarrollo de software a través de proyectos autodidactas y construyendo habilidades continuamente  para forjar mi futuro en la industria tecnológica.",
@@ -19,7 +23,11 @@ const translations = {
     viewDemo: "Ver demo",
     viewCode: "Código",
     skillsTitle: "Habilidades y Herramientas",
-    disclaimerText: "Portfolio creado con JavaScript vanilla, HTML y CSS."
+    disclaimerText: "Portfolio creado con JavaScript vanilla, HTML y CSS.",
+    salontext: "Pagina web estática con tienda para un salón de estética y peluqueria.",
+    MainProjectsTitle: "Proyectos Principales",
+    MainProjectsDesc: "Proyectos originales destinados al desarrollo y aprendizaje.",
+    gametext: "Primer videojuego 3D simple creado con Unity, modelos creados con Blender y descargados de la web."
   }
 };
 
